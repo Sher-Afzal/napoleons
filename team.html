@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .team-slider {
+  display: flex;
+  justify-content: space-between;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+}
+@media (max-width:1000px) {
+  .team-slider {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+}
+.team-member img {
+  width: 70%;
+  height: auto;
+}
+}
+.team-member {
+  flex: 0 0 300px;
+  margin-right: 20px;
+  scroll-snap-align: start;
+}
+
+.team-member img {
+  width: 100%;
+  height: auto;
+}
+
+.team-member h3, .team-member p {
+  text-align: center;
+}
+
+    </style>
+</head>
+<body>
+  <h1 style="color: black;text-align: center;font-size: 40px;">Our Partners</h1>
+    <div class="team-slider">
+        <div class="team-member">
+         <a href="https://dx.app"><img src="./images/part 1.png" alt="Team Member 1"></a> 
+          
+        </div>
+        <div class="team-member">
+          <img src="./images/part 2.png" alt="Team Member 1">
+          
+        </div>
+        
+        <div class="team-member">
+          <img src="./images/part 3.svg" alt="Team Member 2">
+      
+        </div>
+        
+        <!-- Add more team members here -->
+      </div>
+    <div class="team-slider">
+        <div class="team-member">
+          <img src="./images/part 4.png" alt="Team Member 1">
+          
+        </div>
+        <div class="team-member">
+          <img src="./images/part 5.jfif" alt="Team Member 1" style="height: 230px;">
+          
+        </div>
+        
+        <div class="team-member">
+          <img src="./images/prt 6.jfif" alt="Team Member 2">
+       
+        </div>
+        
+        <!-- Add more team members here -->
+      </div>
+      
+</body>
+</html>
